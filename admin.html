@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h2>Admin Panel</h2>
+    
+    <h3>নতুন ইউজার তৈরি করুন</h3>
+    <input type="email" id="userEmail" placeholder="ইউজারের ইমেইল">
+    <input type="text" id="userPassword" placeholder="পাসওয়ার্ড">
+    <button onclick="addUser()">ইউজার তৈরি করুন</button>
+
+    <h3>সকল ইউজার</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ইমেইল</th>
+                <th>স্ট্যাটাস</th>
+                <th>সাবস্ক্রিপশন</th>
+                <th>অ্যাকশন</th>
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>
+    </table>
+
+    <script src="admin.js"></script>
+</body>
+  </html>
